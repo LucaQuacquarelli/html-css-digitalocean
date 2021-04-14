@@ -1,9 +1,28 @@
+/* common */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #364970;
+}
 a:hover {
     text-decoration: none;
 }
 
+ul {
+    padding: 0;
+}
+
+/* header */
+header {
+    position: relative;
+}
+/* nav */
 nav {
-    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: white;
 }
 
 nav li,
@@ -20,10 +39,6 @@ nav a {
 
 .logo-container img {
     width: 100%;
-}
-
-.item-container ul {
-    padding: 0;
 }
 
 .item-container li,
@@ -58,3 +73,122 @@ li > span > i {
     color: white;
     background-color: #3a8bff;
 }
+
+.hamburger-icon {
+    padding-top: 8px;
+    text-align: right;
+}
+
+.hamburger-icon > i {
+    font-size: 20px;
+    color: #3a8bff;
+}
+/* /nav */
+
+/* jumbotron */
+.jbt {
+    margin-top: 69px;
+    padding: 50px 0;
+    background-image: url(../img/bg-banner-home.jpg);
+    background-size: cover;
+}
+
+.title-container {
+    color: white;
+}
+
+.title-container > h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.title-container > p {
+    font-size: 22px;
+}
+
+.account-container {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.account-container > h3 {
+    margin-top: 0;
+    font-size:  28px;
+    font-weight: 600;
+}
+
+.account-container > #h-special {
+    color: #3a8bff;
+}
+
+.btn-account {
+    width: 100%;
+    padding: 3px 0;
+    color: white;
+    background-color: #579aff;
+    border: 1px solid #579aff;
+    transition: 0.3s;
+}
+
+.btn-account:hover {
+    color: #579aff;
+    background-color: white;
+    border: 1px solid #579aff;
+}
+
+.btn-google > img {
+    position: absolute;
+    left: 0;
+    height: 15px;
+    margin: 2px 5px;
+}
+
+.btn-google {
+    position: relative;
+    width: 100%;
+    padding: 3px 0;
+    transition: 0.3s;
+}
+
+.btn-google:hover {
+    border-top: 1px solid red;
+    border-right: 1px solid #71a2f6;
+    border-bottom: 1px solid #6ebf83;
+    border-left: 1px solid #fcc947;
+    background-color: white;
+}
+
+.term-container {
+    font-size: 12px;
+}
+
+.term-container a {
+    color: #3a8bff;
+    text-decoration: underline;
+}
+
+/* media */
+@media screen and (max-width: 991px) {
+
+    .title-container > h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 991px) {
+    
+    .hamburger-icon {
+        margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .log-container li:last-child {
+        margin-top: 10px;
+    }
+}
+
+

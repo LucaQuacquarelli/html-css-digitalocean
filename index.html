@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Digital Ocean</title>
     </head>
@@ -14,13 +16,17 @@
             <nav>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-5 col-sm-2">
+                        <div class="col-xs-6 col-md-3 col-lg-2">
                             <div class="logo-container">
                                 <a href="#up"><img src="img/logo.png" alt="Digital Ocean logo"></a>
                             </div>
                         </div>
-                        <div class="col-xs-offset-5 col-xs-2 visible-xs"></div>
-                        <div class="col-sm-5 col-sm-offset-1 hidden-xs">
+                        <div class="col-xs-6 visible-xs visible-sm">
+                            <div class="hamburger-icon">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm">
                             <div class="item-container">
                                 <ul>
                                     <li>Products<span><i class="fas fa-chevron-down"></i></span></li>
@@ -30,7 +36,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-4 hidden-xs">
+                        <div class="col-md-3 col-lg-4 hidden-xs hidden-sm">
                             <div class="log-container">
                                 <ul>
                                     <li><a href="#">Docs</a></li>
@@ -43,6 +49,45 @@
                     </div>
                 </div>
             </nav>
+            <div class="jbt">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-7">
+                            <div class="title-container">
+                                <h1>The simplest cloud platform for developers &amp; teams</h1>
+                                <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you&#39;re running one virtual machine or ten thousand.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                            <div class="account-container text-center">
+                                <h3>Deploy your app in a second.</h3>
+                                <h3 id="h-special">Get started now.</h3>
+                                <form>
+                                    <div class="form-group">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-default btn-account">Create your account</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-default btn-google"><img src="img/google-icon.png" alt="google icon">
+                                            Sign up with google
+                                        </button>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="term-container">
+                                            <span>By signing up you agree to the <a href="#">Term of Services</a></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
     </body>
 </html>
