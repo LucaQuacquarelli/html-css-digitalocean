@@ -10,6 +10,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 .f-600 {
     font-weight: 600;
 }
@@ -24,13 +25,29 @@ ul {
 }
 
 p {
-   color: #5c6a88;
+   color: #6f7b97;
 }
 
 .partner-container,
 .design {
     background-color: #f3f5f9;
 }
+
+section {
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+.deploy .deploy-title > p,
+.design .design-title > p {
+    font-size: 20px;
+}
+
+.deploy .deploy-content, 
+.design .design-content {
+    margin-top: 60px;
+}
+
 /* /common */
 
 /* header */
@@ -218,16 +235,9 @@ main {
     margin-top: 50px;
 }
 
-.deploy {
-    padding: 30px 0;
-}
-
-.deploy .deploy-title > p {
-    font-size: 20px;
-}
-
-.deploy .deploy-content {
-    margin-top: 60px;
+/* deploy */
+.deploy .deploy-list{
+    margin-bottom: 35px;
 }
 
 .deploy .deploy-list li {
@@ -237,7 +247,7 @@ main {
 
 .deploy .deploy-list a {
     font-size: 20px;
-    color: #5c6a88;
+    color: #6f7b97;
 }
 
 .deploy .deploy-list li:hover a {
@@ -252,14 +262,41 @@ main {
     font-size: 15px;
 }
 
-.deploy .deploy-list{
-    margin-bottom: 35px;
+.deploy-content > .container {
+    padding: 0 85px;
 }
 
 .deploy .deploy-content .dep-wrapper{
     margin-top: 20px;
 }
+/* /deploy */
 
+/* design */
+.chevron-container {
+    padding: 180px 0;
+}
+
+.chevron-container > i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i.fa-chevron-left {
+    color: #6f7b97;
+}
+
+.slide-container > img {
+    width: 100%;
+}
+
+.slider {
+    margin-top: 15px;
+}
+
+.slider i {
+    color: #3a8bff;
+    cursor: pointer;
+}
 
 /* media */
 @media screen and (min-width: 768px) {
@@ -273,6 +310,10 @@ main {
     
     .deploy .deploy-content .dep-wrapper{
         margin-top: 0px;
+    }
+
+    .deploy-content > .container {
+        padding: 0 15px;
     }
 }
 
@@ -304,6 +345,10 @@ main {
     .hamburger-icon {
         margin-top: 18px;
     }
+
+    .chevron-container {
+        padding: 100px 0;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -312,12 +357,8 @@ main {
         margin-top: 10px;
     }
 
-    .deploy .deploy-list{
-        margin-bottom: 20px;
-    }
-
-    .deploy .deploy-content .dep-wrapper{
-        margin-top: 20px;
+    .chevron-container {
+        padding: 150px 0;
     }
 }
 
