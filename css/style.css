@@ -297,15 +297,34 @@ i.fa-chevron-left {
     color: #3a8bff;
     cursor: pointer;
 }
+/* /design */
 
-/* media */
-@media screen and (min-width: 768px) {
-    
-    .deploy .deploy-list{
-        margin-bottom: 0px;
-    }
+/* feature */
+.feature-content {
+    margin-top: 50px;
 }
 
+.feature-content p {
+    font-size: 15px;
+}
+
+.feature-content a {
+    color: #3a8bff;
+}
+
+.feature-content a:hover {
+    text-decoration: underline;
+}
+/* /feature */
+
+/* region */
+.region {
+    height: 300px;
+    background-image: linear-gradient(#0044c3, #001e99);
+}
+/* /region */
+
+/* media */
 @media screen and (max-width: 767px) {
     
     .deploy .deploy-content .dep-wrapper{
@@ -314,6 +333,18 @@ i.fa-chevron-left {
 
     .deploy-content > .container {
         padding: 0 15px;
+    }
+
+    .support-container,
+    .security-container {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .deploy .deploy-list{
+        margin-bottom: 0px;
     }
 }
 
