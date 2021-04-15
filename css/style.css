@@ -24,6 +24,28 @@ p {
    color: #6f7b97;
 }
 
+.chevron-container {
+    padding: 180px 0;
+}
+
+.chevron-container > i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i.fa-chevron-left {
+    color: #6f7b97;
+}
+
+.slider {
+    margin-top: 15px;
+}
+
+.slider i {
+    color: #3a8bff;
+    cursor: pointer;
+}
+
 .partner-container,
 .design,
 .development {
@@ -31,7 +53,7 @@ p {
 }
 
 section {
-    margin: 30px 0;
+    margin-top: 30px;
     padding: 30px 0;
 }
 
@@ -46,7 +68,6 @@ section {
 .development .development-content {
     margin-top: 60px;
 }
-
 /* /common */
 
 /* header */
@@ -271,30 +292,9 @@ main {
 /* /deploy */
 
 /* design */
-.chevron-container {
-    padding: 180px 0;
-}
 
-.chevron-container > i {
-    font-size: 30px;
-    cursor: pointer;
-}
-
-i.fa-chevron-left {
-    color: #6f7b97;
-}
-
-.slide-container > img {
+.design .slide-container > img {
     width: 100%;
-}
-
-.slider {
-    margin-top: 15px;
-}
-
-.slider i {
-    color: #3a8bff;
-    cursor: pointer;
 }
 /* /design */
 
@@ -348,6 +348,7 @@ i.fa-chevron-left {
 
 /* development */
 .development {
+    margin-top: 0;
     padding: 60px 0;
 }
 
@@ -381,6 +382,35 @@ i.fa-chevron-left {
     text-decoration: underline;
 }
 /* /development */
+
+/* started */
+.started {
+    margin-top: 0;
+    padding: 40px 0;
+    background-image: linear-gradient(#0044c3, #001e99);
+}
+
+.started h2 {
+    color: white;
+}
+.start {
+    margin-top: 20px;
+}
+
+.started a {
+    padding: 8px;
+    color: #3a8bff;
+    border: 1px solid #3a8bff;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.started a:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: #3a8bff;
+}
+/* /started */
 
 /* media */
 @media screen and (max-width: 767px) {
@@ -435,7 +465,7 @@ i.fa-chevron-left {
         margin-top: 18px;
     }
 
-    .chevron-container {
+    .design .chevron-container {
         padding: 100px 0;
     }
 }
@@ -446,7 +476,7 @@ i.fa-chevron-left {
         margin-top: 10px;
     }
 
-    .chevron-container {
+    .design .chevron-container {
         padding: 150px 0;
     }
 }
