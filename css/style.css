@@ -391,6 +391,7 @@ main {
 }
 
 .started h2 {
+    margin-top: 0;
     color: white;
 }
 .start {
@@ -411,6 +412,49 @@ main {
     background-color: #3a8bff;
 }
 /* /started */
+
+/* footer */
+footer {
+    padding: 40px 0;
+    color: #8690a6;
+    background-color: #031c4e;
+}
+
+.copyright-container > h5 {
+    margin-bottom: 0;    
+}
+
+.copyright-container  i {
+    font-size: 20px;  
+    padding: 0 5px;
+}
+
+footer a {
+    color: #8690a6;
+}
+
+.social-link a:hover {
+    color: white;
+}
+
+.footer-list h4 {
+    color: white;
+}
+
+.footer-list li {
+    margin: 10px 0;
+}
+
+.footer-list a {
+    padding-left: 5px;
+}
+
+.footer-list a:hover {
+    color: white;
+    border-left: 1px solid white;
+}
+
+
 
 /* media */
 @media screen and (max-width: 767px) {
